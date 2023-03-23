@@ -1,0 +1,5 @@
+FROM python:3.12.0a5-bullseye
+RUN apt-get update && apt-get -y upgrade
+COPY ./ravana.py ~/sita.py
+WORKDIR ~/
+ENTRYPOINT ["/bib/sh"]
